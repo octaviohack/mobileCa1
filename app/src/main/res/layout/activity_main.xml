@@ -6,13 +6,83 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <ImageView
+        android:id="@+id/profilephoto"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/avatars" />
+
     <TextView
+        android:id="@+id/Detailes"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:text="TextView"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        tools:layout_editor_absoluteY="49dp" />
+
+    <TextView
+        android:id="@+id/course"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        tools:layout_editor_absoluteX="175dp"
+        tools:layout_editor_absoluteY="78dp" />
+
+    <Button
+        android:id="@+id/buttonEducation"
+        android:layout_width="152dp"
+        android:layout_height="46dp"
+        android:onClick="s"
+        android:text="Education"
+        app:layout_marginBaseline="5dp"
+        tools:layout_editor_absoluteX="117dp"
+        tools:layout_editor_absoluteY="300dp" />
+
+    <Button
+        android:id="@+id/buttonExit"
+        android:layout_width="152dp"
+        android:layout_height="45dp"
+        android:text="Exit"
+        app:layout_marginBaseline="5dp"
+        tools:layout_editor_absoluteX="116dp"
+        tools:layout_editor_absoluteY="468dp" />
+
+    <Button
+        android:id="@+id/buttonAchievements"
+        android:layout_width="152dp"
+        android:layout_height="45dp"
+        android:text="Achievements"
+        app:layout_marginBaseline="5dp"
+        tools:layout_editor_absoluteX="116dp"
+        tools:layout_editor_absoluteY="410dp" />
+
+    <Button
+        android:id="@+id/buttonSkills"
+        android:layout_width="152dp"
+        android:layout_height="45dp"
+        android:onClick="s"
+        android:text="Skills"
+        app:layout_marginBaseline="5dp"
+        tools:layout_editor_absoluteX="116dp"
+        tools:layout_editor_absoluteY="356dp" />
+
+    <TextView
+        android:id="@+id/foot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="6dp"
+        android:paddingTop="10dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        android:textColor="#424040"
+        app:barrierMargin="1dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="181dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
